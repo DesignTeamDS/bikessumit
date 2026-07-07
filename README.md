@@ -3,8 +3,6 @@
 Protótipo de alta fidelidade da homepage da **Bikes Summit** — a primeira Cimeira ibérica dedicada ao ecossistema da bicicleta e à mobilidade sustentável.
 📍 Matosinhos · Portugal · 09–10 Abril 2027
 
-> Referência visual: [palermo.ddd.live](https://palermo.ddd.live) · Direção: secções mistas claro/escuro, tipografia display, gradientes verdes neon.
-> Este protótipo servirá de base para reconstrução em **WordPress + Elementor Pro**.
 
 ## Como visualizar
 
