@@ -8,11 +8,11 @@
 <meta property="og:title" content="Bikes Summit 2027 — Matosinhos" />
 <meta property="og:description" content="A Cimeira ibérica da bicicleta e mobilidade sustentável. 09–10 Abril 2027." />
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=11" />
+<link rel="stylesheet" href="css/style.css?v=15" />
 </head>
 <body>
 
-<!-- ================= NAVVVV ================= -->
+<!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <a class="nav__logo" href="#top" aria-label="Bikes Summit — início">
     <img src="img/logo-bikes-summit-white.png" alt="Bikes Summit" />
@@ -75,8 +75,8 @@
 <section class="hero" id="hero">
   <div class="hero__bg">
     <picture>
-      <source srcset="img/hero-talks.webp" type="image/webp" />
-      <img src="img/hero-talks.jpg" alt="Plateia a assistir a uma talk numa conferência" fetchpriority="high" decoding="async" width="1920" height="1082" />
+      <source srcset="img/hero-home.webp" type="image/webp" />
+      <img src="img/hero-home.jpg" alt="Auditório de conferência com plateia" fetchpriority="high" decoding="async" width="1920" height="1080" />
     </picture>
   </div>
   <div class="hero__grad"></div>
@@ -84,12 +84,8 @@
 
   <div class="hero__meta wrap">
     <div class="hero__meta-col">
-      <span class="mono">Matosinhos · Portugal</span>
-      <span class="mono">41.1844° N — 8.6918° W</span>
-    </div>
-    <div class="hero__meta-col">
-      <span class="mono"><b>09 — 10 ABR 2027</b></span>
-      <span class="mono">1ª Edição · Ibérica</span>
+      <span class="mono">9 — 10 Abril 2027</span>
+      <span class="mono">Matosinhos | Porto</span>
     </div>
   </div>
 
@@ -110,38 +106,49 @@
   </div>
 </section>
 
-<!-- ================= GALLERY ================= -->
-<section class="gallery">
+<!-- ================= MÉTRICAS ================= -->
+<section class="section metrics">
   <div class="wrap">
-    <div class="gallery__grid">
-      <figure class="g1" data-reveal>
-        <img data-img="bike-lane" alt="Grupo de ciclistas em estrada" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop" />
-        <figcaption class="gallery__cap">Cidades cicláveis</figcaption>
-      </figure>
-      <figure class="g2" data-reveal style="--d:120ms">
-        <img data-img="conference" alt="Plateia numa conferência" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1100&auto=format&fit=crop" />
-        <figcaption class="gallery__cap">Keynotes &amp; painéis</figcaption>
-      </figure>
-      <figure class="g3" data-reveal style="--d:240ms">
-        <img data-img="ebike" alt="Detalhe de uma bicicleta elétrica" src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=800&auto=format&fit=crop" />
-        <figcaption class="gallery__cap">Inovação &amp; E-Bikes</figcaption>
-      </figure>
-      <figure class="g4" data-reveal style="--d:360ms">
-        <img data-img="networking" alt="Momento de networking" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=700&auto=format&fit=crop" />
-        <figcaption class="gallery__cap">Networking</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+    <div class="metric-cards">
+      <article class="metric" data-reveal>
+        <img class="metric__bg" data-img="m1" alt="" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop" />
+        <div class="metric__grad"></div>
+        <div class="metric__body">
+          <div class="metric__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="15" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 9.5H20.5M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <div class="metric__n">2</div>
+          <div class="metric__l">Dias de Cimeira</div>
+        </div>
+      </article>
 
-<!-- ================= STATS ================= -->
-<section class="stats">
-  <div class="wrap">
-    <div class="stats__grid">
-      <div class="stats__item" data-reveal><div class="stats__n">2<span class="u">d</span></div><div class="stats__l">Dias de cimeira</div></div>
-      <div class="stats__item" data-reveal style="--d:100ms"><div class="stats__n">7</div><div class="stats__l">Eixos temáticos</div></div>
-      <div class="stats__item" data-reveal style="--d:200ms"><div class="stats__n">50<span class="u">+</span></div><div class="stats__l">Oradores &amp; painelistas</div></div>
-      <div class="stats__item" data-reveal style="--d:300ms"><div class="stats__n">3<span class="u">k</span></div><div class="stats__l">Participantes esperados</div></div>
+      <article class="metric" data-reveal style="--d:100ms">
+        <img class="metric__bg" data-img="m2" alt="" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop" />
+        <div class="metric__grad"></div>
+        <div class="metric__body">
+          <div class="metric__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5-8 4.5-8-4.5L12 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 12l8 4.5 8-4.5M4 16.5l8 4.5 8-4.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+          <div class="metric__n">7</div>
+          <div class="metric__l">Eixos temáticos</div>
+        </div>
+      </article>
+
+      <article class="metric" data-reveal style="--d:200ms">
+        <img class="metric__bg" data-img="m3" alt="" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=800&auto=format&fit=crop" />
+        <div class="metric__grad"></div>
+        <div class="metric__body">
+          <div class="metric__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21M8.5 21h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <div class="metric__n">+50</div>
+          <div class="metric__l">Oradores</div>
+        </div>
+      </article>
+
+      <article class="metric" data-reveal style="--d:300ms">
+        <img class="metric__bg" data-img="m4" alt="" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" />
+        <div class="metric__grad"></div>
+        <div class="metric__body">
+          <div class="metric__ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 20a5.5 5.5 0 0111 0M16 5.2a3.2 3.2 0 010 6.1M15.5 14.6c2.6.5 4.5 2.4 4.5 5.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <div class="metric__n">3K</div>
+          <div class="metric__l">Visitantes esperados</div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -437,42 +444,32 @@
       <p class="split-side lead lead-muted" data-reveal style="--d:160ms">A Bikes Summit é um ecossistema de momentos ao longo do ano — do palco das ideias à festa que une a comunidade.</p>
     </div>
 
-    <div class="hub__split">
-      <article class="hub__card hub__card--talks hub__card--feature" data-reveal>
-        <img data-img="talks" alt="Palco de uma talk" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1200&auto=format&fit=crop" />
+    <div class="hub__row">
+      <article class="hub__card hub__card--talks" data-reveal>
+        <img data-img="talks" alt="Palco de uma talk" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=800&auto=format&fit=crop" />
         <span class="kicker">Bikes Summit Talks</span>
-        <h3>A agenda de ideias,<br>o ano inteiro.</h3>
-        <p>Ciclo de talks temáticas que aquece a comunidade entre edições da Cimeira. Um espaço próprio para debater mobilidade, indústria e futuro — com página e agenda exclusivas.</p>
-        <a class="hub__tag link-underline" href="bikes-summit-talks.html" style="color:var(--talks)">Ver agenda das Talks →</a>
+        <h3>Talks</h3>
+        <p>Ciclo de talks temáticas que aquece a comunidade, o ano inteiro.</p>
+        <a class="hub__tag link-underline" href="bikes-summit-talks.html" style="color:var(--talks)">Ver agenda →</a>
       </article>
-
-      <div class="hub__right">
-        <article class="hub__card" data-reveal style="--d:100ms">
-          <img data-img="after" alt="After party" src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop" />
-          <span class="kicker">After Party</span>
-          <h3>After Party</h3>
-          <p>O fecho do dia 1, onde as conversas continuam.</p>
-        </article>
-        <article class="hub__card" data-reveal style="--d:160ms">
-          <img data-img="sunset" alt="Sunset party" src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop" />
-          <span class="kicker">Sunset Party</span>
-          <h3>Sunset Party</h3>
-          <p>Pôr-do-sol à beira-mar de Matosinhos.</p>
-        </article>
-        <article class="hub__card" data-reveal style="--d:220ms">
-          <img data-img="night" alt="Night summit" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop" />
-          <span class="kicker">Night Summit</span>
-          <h3>Night Summit</h3>
-          <p>Programação nocturna e experiências imersivas.</p>
-        </article>
-        <article class="hub__card hub__card--awards" data-reveal style="--d:280ms">
-          <img data-img="awards" alt="Gala de prémios" src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=800&auto=format&fit=crop" />
-          <span class="kicker">Bikes Summit Awards</span>
-          <h3>Awards</h3>
-          <p>Os prémios do setor. Site próprio.</p>
-          <a class="hub__tag link-underline" href="https://www.bikessummitawards.com" target="_blank" rel="noopener" style="color:var(--awards)">Conhecer →</a>
-        </article>
-      </div>
+      <article class="hub__card" data-reveal style="--d:100ms">
+        <img data-img="after" alt="After party" src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop" />
+        <span class="kicker">After Party</span>
+        <h3>After Party</h3>
+        <p>O fecho do dia 1, onde as conversas continuam.</p>
+      </article>
+      <article class="hub__card" data-reveal style="--d:200ms">
+        <img data-img="sunset" alt="Sunset party" src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=800&auto=format&fit=crop" />
+        <span class="kicker">Sunset Party</span>
+        <h3>Sunset Party</h3>
+        <p>Pôr-do-sol à beira-mar de Matosinhos.</p>
+      </article>
+      <article class="hub__card" data-reveal style="--d:300ms">
+        <img data-img="night" alt="Night summit" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop" />
+        <span class="kicker">Night Summit</span>
+        <h3>Night Summit</h3>
+        <p>Programação nocturna e experiências imersivas.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -583,7 +580,7 @@
   </div>
 
   <div class="wrap footer__bottom">
-    <span>© 2027 Bikes Summit · veloconnect.pt</span>
+    <span>© 2027 Bikes Summit</span>
     <div class="footer__legal">
       <a href="#">Política de Privacidade</a>
       <a href="#">Cookies</a>
