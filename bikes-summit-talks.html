@@ -6,7 +6,7 @@
 <title>Bikes Summit Talks — Ideias que aquecem a comunidade</title>
 <meta name="description" content="Bikes Summit Talks: ciclo de talks temáticas sobre bicicleta e mobilidade que aquece a comunidade entre edições da Cimeira. Agenda e inscrições." />
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=15" />
+<link rel="stylesheet" href="css/style.css?v=22" />
 </head>
 <body>
 
@@ -37,7 +37,7 @@
         <a href="https://www.bikessummitawards.com" target="_blank" rel="noopener">Bikes Summit Awards ↗</a>
       </div>
     </div>
-    <a href="index.html#sponsors">Sponsors</a>
+    <a href="index.html#sponsors">Patrocinadores</a>
   </nav>
   <div class="nav__right">
     <span class="nav__lang"><b>PT</b> / EN</span>
@@ -62,14 +62,14 @@
   <a href="index.html#hub" class="msub">Sunset Party</a>
   <a href="index.html#hub" class="msub">Night Summit</a>
   <a href="https://www.bikessummitawards.com" target="_blank" rel="noopener" class="msub">Bikes Summit Awards ↗</a>
-  <a href="index.html#sponsors">Sponsors <span>07</span></a>
+  <a href="index.html#sponsors">Patrocinadores <span>07</span></a>
   <a class="btn btn--mint" href="index.html#bilhetes">Comprar Bilhetes</a>
 </div>
 
 <main id="top">
 
 <!-- ================= PAGE HERO ================= -->
-<section class="page-hero page-hero--talks" id="hero">
+<section class="page-hero page-hero--talks talks-hero" id="hero">
   <div class="page-hero__bg">
     <img data-img="ph" alt="Palco de uma talk" src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1900&auto=format&fit=crop" />
   </div>
@@ -77,8 +77,20 @@
   <div class="page-hero__grain grain"></div>
   <div class="wrap page-hero__inner">
     <nav class="breadcrumb" aria-label="Trilho"><a href="index.html">Início</a> <span>/</span> <a href="index.html#hub">Events Hub</a> <span>/</span> Bikes Summit Talks</nav>
-    <h1 data-reveal><img class="talks-logo" src="img/logo-talks-white.png" alt="Bikes Summit Talks" /></h1>
-    <p class="page-hero__lead" data-reveal style="--d:120ms">Talks temáticas sobre bicicleta e mobilidade que aquecem a comunidade entre edições da Cimeira. Ideias, debate e inspiração — o ano inteiro.</p>
+    <img class="talks-logo talks-hero__logo" data-reveal src="img/logo-talks-white.png" alt="Bikes Summit Talks" />
+    <h1 class="talks-hero__tagline" data-reveal style="--d:100ms">Conversas que aquecem a mobilidade.</h1>
+    <p class="page-hero__lead talks-hero__lead" data-reveal style="--d:180ms">Talks temáticas sobre bicicleta e mobilidade, online e presenciais, a caminho da 1ª Bikes Summit. Gratuitas e abertas a todos — o ano inteiro.</p>
+    <div class="talks-hero__cta" data-reveal style="--d:240ms">
+      <a class="btn btn--talks" href="#agenda">Ver próximas talks
+        <svg class="arw" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v9M7 11L3 7M7 11l4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--ghost" href="#newsletter">Receber a agenda</a>
+    </div>
+    <a class="talks-next" href="#agenda" data-reveal style="--d:300ms">
+      <span class="talks-next__tag">Próxima talk</span>
+      <span class="talks-next__txt"><b>15 Out 2026</b> · Cidades desenhadas para pedalar</span>
+      <span class="talks-next__arw">→</span>
+    </a>
   </div>
 </section>
 
@@ -95,18 +107,19 @@
 
     <div class="feature-split">
       <div data-reveal>
-        <p>As <b>Bikes Summit Talks</b> são um ciclo de encontros temáticos, online e presenciais, dedicados aos grandes temas da bicicleta: mobilidade urbana, inovação, indústria, políticas públicas e desporto.</p>
+        <p>As <b>Bikes Summit Talks</b> são um ciclo de encontros temáticos — online e presenciais — dedicados aos grandes temas da bicicleta: mobilidade urbana, inovação, indústria, políticas públicas e desporto.</p>
         <p>Cada talk reúne um orador de referência e a comunidade, num formato ágil de apresentação e debate. São o ponto de encontro que prepara terreno para a grande Cimeira — e que mantém a rede ativa durante todo o ano.</p>
-        <p>Gratuitas e abertas a todos: decisores, indústria, academia, startups e entusiastas.</p>
-        <div class="benefits" style="margin-top:2rem">
-          <div class="benefit" data-reveal><div class="benefit__n" style="color:#A32CC9">◒</div><h3>Online &amp; presencial</h3><p>Assista onde estiver ou junte-se à comunidade em Matosinhos e no Porto.</p></div>
-          <div class="benefit" data-reveal style="--d:80ms"><div class="benefit__n" style="color:#A32CC9">◆</div><h3>Temáticas</h3><p>Cada sessão foca um eixo da Cimeira, com um orador de referência.</p></div>
-          <div class="benefit" data-reveal style="--d:160ms"><div class="benefit__n" style="color:#A32CC9">↻</div><h3>Entre edições</h3><p>Mantêm a comunidade ligada ao longo do ano, a caminho da próxima Cimeira.</p></div>
-        </div>
+        <p class="hl-talks" style="font-weight:500">Gratuitas e abertas a todos: decisores, indústria, academia, startups e entusiastas.</p>
       </div>
       <figure class="venue-fig" data-reveal style="--d:120ms">
         <img data-img="talk" alt="Oradora numa conversa com a comunidade" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1000&auto=format&fit=crop" />
       </figure>
+    </div>
+
+    <div class="benefits" style="margin-top:clamp(2.5rem,5vw,4rem)">
+      <div class="benefit" data-reveal><div class="benefit__n" style="color:#A32CC9">◒</div><h3>Online &amp; presencial</h3><p>Assista onde estiver, em direto, ou junte-se à comunidade em Matosinhos e no Porto.</p></div>
+      <div class="benefit" data-reveal style="--d:100ms"><div class="benefit__n" style="color:#A32CC9">◆</div><h3>Temáticas</h3><p>Cada sessão foca um eixo da Cimeira, com um orador de referência e tempo para debate.</p></div>
+      <div class="benefit" data-reveal style="--d:200ms"><div class="benefit__n" style="color:#A32CC9">↻</div><h3>Entre edições</h3><p>Mantêm a comunidade ligada ao longo do ano, a caminho da próxima Bikes Summit.</p></div>
     </div>
   </div>
 </section>
