@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Voluntários — Bikes Summit 2027</title>
-<meta name="description" content="Seja voluntário na Bikes Summit 2027. Conheça os benefícios, o que precisa antes de se inscrever e faça o primeiro contacto. Matosinhos, 09–10 Abril 2027." />
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+<title>Notícias — Bikes Summit 2027 · Novidades da Cimeira</title>
+<meta name="description" content="As últimas notícias da Bikes Summit 2027: oradores, programa, mobilidade e a cidade de Matosinhos. Acompanhe as novidades da 1ª Cimeira ibérica da bicicleta." />
 <link rel="stylesheet" href="css/style.css?v=26" />
 </head>
 <body>
@@ -69,100 +68,86 @@
 <main id="top">
 
 <!-- ================= PAGE HERO ================= -->
-<section class="page-hero" id="hero">
+<section class="page-hero page-hero--photo" id="hero">
   <div class="page-hero__bg">
-    <img data-img="ph" alt="Equipa de voluntários num evento" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1900&auto=format&fit=crop" />
+    <picture>
+      <source srcset="img/cidade-matosinhos.webp" type="image/webp" />
+      <img data-img="ph" alt="Matosinhos, palco da Bikes Summit" src="img/cidade-matosinhos.jpg" />
+    </picture>
   </div>
   <div class="page-hero__grad"></div>
   <div class="page-hero__grain grain"></div>
   <div class="wrap page-hero__inner">
-    <nav class="breadcrumb" aria-label="Trilho"><a href="index.html">Início</a> <span>/</span> Voluntários</nav>
-    <h1 data-reveal>Voluntários</h1>
-    <p class="page-hero__lead" data-reveal style="--d:120ms">Faça parte da equipa que dá vida à primeira Bikes Summit. Viva o evento por dentro, conheça pessoas e ajude a construir o futuro da mobilidade.</p>
+    <nav class="breadcrumb" aria-label="Trilho"><a href="index.html">Início</a> <span>/</span> Notícias</nav>
+    <h1 data-reveal>Notícias</h1>
+    <p class="page-hero__lead" data-reveal style="--d:120ms">Tudo o que acontece a caminho da 1ª Bikes Summit: oradores confirmados, novidades do programa, mobilidade e a cidade que nos recebe.</p>
   </div>
 </section>
 
-<!-- ================= 01 · BENEFÍCIOS ================= -->
-<section class="section" id="beneficios">
+<!-- ================= NOTÍCIAS ================= -->
+<section class="section" id="noticias">
   <div class="wrap">
-    <div class="split-head">
-      <div>
-        <span class="eyebrow" data-reveal>01 — Porquê ser voluntário</span>
-        <h2 class="display-md" data-reveal style="--d:80ms">Viva a Cimeira por dentro.</h2>
+    <div class="news-toolbar">
+      <p class="news-count"><b>3</b> artigos</p>
+      <div class="news-filter" role="group" aria-label="Filtrar por categoria">
+        <button class="news-filter__btn is-active" data-filter="all" aria-pressed="true">Todas</button>
+        <button class="news-filter__btn" data-filter="oradores" aria-pressed="false">Oradores</button>
+        <button class="news-filter__btn" data-filter="cidade" aria-pressed="false">Cidade</button>
+        <button class="news-filter__btn" data-filter="mobilidade" aria-pressed="false">Mobilidade</button>
       </div>
-      <p class="split-side lead" data-reveal style="--d:160ms">Ser voluntário na Bikes Summit é mais do que ajudar — é fazer parte da comunidade, ganhar experiência e viver o evento de um lugar único.</p>
     </div>
 
-    <div class="benefits">
-      <div class="benefit" data-reveal><div class="benefit__n">◒</div><h3>Nos bastidores</h3><p>Viva a Cimeira de dentro, junto da organização, oradores e expositores.</p></div>
-      <div class="benefit" data-reveal style="--d:80ms"><div class="benefit__n">◆</div><h3>Passe &amp; kit</h3><p>Acesso ao programa nos períodos livres e kit exclusivo de voluntário.</p></div>
-      <div class="benefit" data-reveal style="--d:160ms"><div class="benefit__n">✦</div><h3>Certificado</h3><p>Certificado de participação que valoriza o seu percurso e currículo.</p></div>
-      <div class="benefit" data-reveal style="--d:240ms"><div class="benefit__n">↻</div><h3>Formação</h3><p>Uma sessão de preparação antes do evento, para chegar a postos com confiança.</p></div>
-      <div class="benefit" data-reveal><div class="benefit__n">◇</div><h3>Networking</h3><p>Conheça profissionais do setor, decisores e uma comunidade apaixonada.</p></div>
-      <div class="benefit" data-reveal style="--d:80ms"><div class="benefit__n">♥</div><h3>Comunidade</h3><p>Faça amizades e junte-se a uma rede que se mantém para além do evento.</p></div>
+    <div class="news-grid">
+      <a class="n-card" href="noticia-1.html" data-cat="oradores" data-reveal>
+        <div class="n-card__media">
+          <span class="n-card__tag">Oradores</span>
+          <picture>
+            <source srcset="img/noticia-oradores.webp" type="image/webp" />
+            <img src="img/noticia-oradores.jpg" alt="Plateia numa conferência internacional" loading="lazy" />
+          </picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">3 Julho 2026</span>
+          <h3 class="n-card__title">Bikes Summit anuncia os primeiros oradores da 1ª edição</h3>
+          <p class="n-card__excerpt">Nomes de referência da mobilidade, do urbanismo e da indústria da bicicleta juntam-se ao palco de Matosinhos em Abril de 2027.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a class="n-card" href="noticia-2.html" data-cat="cidade" data-reveal style="--d:100ms">
+        <div class="n-card__media">
+          <span class="n-card__tag">Cidade</span>
+          <picture>
+            <source srcset="img/cidade-matosinhos.webp" type="image/webp" />
+            <img src="img/cidade-matosinhos.jpg" alt="Orla marítima de Matosinhos" loading="lazy" />
+          </picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">24 Junho 2026</span>
+          <h3 class="n-card__title">Matosinhos prepara-se para receber a Cimeira ibérica da bicicleta</h3>
+          <p class="n-card__excerpt">A cidade atlântica, com a sua orla ciclável e a Antiga Fábrica Vasco da Gama, será o cenário da primeira Bikes Summit.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a class="n-card" href="noticia-3.html" data-cat="mobilidade" data-reveal style="--d:200ms">
+        <div class="n-card__media">
+          <span class="n-card__tag">Mobilidade</span>
+          <picture>
+            <source srcset="img/noticia-mobilidade.webp" type="image/webp" />
+            <img src="img/noticia-mobilidade.jpg" alt="Ciclista numa estrada ao amanhecer" loading="lazy" />
+          </picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">12 Junho 2026</span>
+          <h3 class="n-card__title">Mobilidade ativa: porque a Europa se redesenha à volta da bicicleta</h3>
+          <p class="n-card__excerpt">De Sevilha a Copenhaga, as cidades europeias mostram que investir em ciclovias transforma a economia, a saúde e o ar que respiramos.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
     </div>
-  </div>
-</section>
 
-<!-- ================= ANTES DE TE INSCREVERES ================= -->
-<section class="section" id="antes" style="background:var(--paper-2)">
-  <div class="wrap">
-    <div class="split-head">
-      <div>
-        <span class="eyebrow" data-reveal>02 — Antes de te inscreveres</span>
-        <h2 class="display-md" data-reveal style="--d:80ms">O que precisas de saber.</h2>
-      </div>
-      <p class="split-side lead" data-reveal style="--d:160ms">Alguns pontos importantes antes de avançar. Ao inscrever-se, assume que reúne estas condições.</p>
-    </div>
-
-    <ul class="venue-facts" style="max-width:72ch" data-reveal>
-      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Ter <b>18 anos ou mais</b> à data do evento.</li>
-      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Disponibilidade para <b>9 e 10 de Abril de 2027</b>, e para a sessão de formação prévia.</li>
-      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Boa capacidade de comunicação; o <b>inglês</b> é uma mais-valia (evento internacional).</li>
-      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Espírito de equipa, sentido de responsabilidade e boa disposição.</li>
-      <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9.5L7 13.5L15 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Gosto pela bicicleta e pela mobilidade sustentável — o mais importante!</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= INSCRIÇÃO (FORM) ================= -->
-<section class="section on-dark grain" id="inscrever">
-  <div class="wrap form-split">
-    <div class="form-split__intro">
-      <span class="eyebrow" data-reveal>03 — Quero ser voluntário</span>
-      <h2 class="display-md" data-reveal style="--d:80ms">Junte-se à equipa.</h2>
-      <p class="lead lead-muted" data-reveal style="--d:160ms">Deixe os seus dados e a nossa equipa entra em contacto com os próximos passos e as funções disponíveis.</p>
-      <ul class="form-split__list" data-reveal style="--d:220ms">
-        <li><b>◆</b> Inscrição gratuita</li>
-        <li><b>◆</b> Várias funções e horários</li>
-        <li><b>◆</b> Seleção comunicada por email</li>
-      </ul>
-    </div>
-
-    <form class="form-card js-form" novalidate>
-      <div class="form-card__title">Inscrição de Voluntário</div>
-      <div class="form-card__sub">Este é apenas um primeiro contacto.</div>
-
-      <div class="field">
-        <label for="nome">Nome <i>*</i></label>
-        <input id="nome" name="nome" type="text" placeholder="O seu nome" required />
-      </div>
-      <div class="field">
-        <label for="email">Email <i>*</i></label>
-        <input id="email" name="email" type="email" placeholder="o.seu@email.pt" autocomplete="email" required />
-      </div>
-
-      <button class="btn btn--mint" type="submit">Quero ser voluntário
-        <svg class="arw" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <p class="form__note"><b>Atenção:</b> o envio deste formulário não garante o lugar como voluntário. É apenas um primeiro contacto — a equipa do evento entrará em contacto para finalizar o processo.</p>
-
-      <div class="form__success" hidden>
-        <div class="check"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M6 13.5L11 18.5L20 8" stroke="#01140E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Inscrição recebida!</h3>
-        <p>Obrigado pelo interesse. A nossa equipa vai analisar a sua inscrição e entrar em contacto para finalizar o processo.</p>
-      </div>
-    </form>
+    <p class="news-empty">Não há artigos nesta categoria — por agora.</p>
   </div>
 </section>
 
@@ -247,5 +232,27 @@
 </footer>
 
 <script src="js/main.js?v=6"></script>
+<script>
+  (function () {
+    var btns = document.querySelectorAll('.news-filter__btn');
+    var cards = document.querySelectorAll('.news-grid .n-card');
+    var count = document.querySelector('.news-count b');
+    var empty = document.querySelector('.news-empty');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        btns.forEach(function (x) { x.classList.remove('is-active'); x.setAttribute('aria-pressed', 'false'); });
+        b.classList.add('is-active'); b.setAttribute('aria-pressed', 'true');
+        var f = b.dataset.filter, shown = 0;
+        cards.forEach(function (c) {
+          var match = f === 'all' || c.dataset.cat === f;
+          c.classList.toggle('is-hidden', !match);
+          if (match) shown++;
+        });
+        if (count) count.textContent = shown;
+        if (empty) empty.classList.toggle('is-shown', shown === 0);
+      });
+    });
+  })();
+</script>
 </body>
 </html>

@@ -8,11 +8,11 @@
 <meta property="og:title" content="Bikes Summit 2027 — Matosinhos" />
 <meta property="og:description" content="A Cimeira ibérica da bicicleta e mobilidade sustentável. 09–10 Abril 2027." />
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
-<link rel="stylesheet" href="css/style.css?v=22" />
+<link rel="stylesheet" href="css/style.css?v=26" />
 </head>
 <body>
 
-<!-- ================= NAVVVVVVV ================= -->
+<!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <a class="nav__logo" href="#top" aria-label="Bikes Summit — início">
     <img src="img/logo-bikes-summit-white.png" alt="Bikes Summit" />
@@ -474,6 +474,60 @@
   </div>
 </section>
 
+<!-- ================= NOTÍCIAS ================= -->
+<section class="section news-home" id="noticias">
+  <div class="wrap">
+    <div class="split-head">
+      <div>
+        <span class="eyebrow" data-reveal>08 — Notícias</span>
+        <h2 class="display-md" data-reveal style="--d:80ms">Últimas notícias.</h2>
+      </div>
+      <a class="btn btn--ghost split-side" href="noticias.html" data-reveal style="--d:160ms">Ver todas as notícias
+        <svg class="arw" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="news-grid">
+      <a class="n-card" href="noticia-1.html" data-reveal>
+        <div class="n-card__media">
+          <span class="n-card__tag">Oradores</span>
+          <picture><source srcset="img/noticia-oradores.webp" type="image/webp" /><img src="img/noticia-oradores.jpg" alt="Plateia numa conferência internacional" loading="lazy" /></picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">3 Julho 2026</span>
+          <h3 class="n-card__title">Bikes Summit anuncia os primeiros oradores da 1ª edição</h3>
+          <p class="n-card__excerpt">Nomes de referência da mobilidade, do urbanismo e da indústria juntam-se ao palco de Matosinhos.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="n-card" href="noticia-2.html" data-reveal style="--d:100ms">
+        <div class="n-card__media">
+          <span class="n-card__tag">Cidade</span>
+          <picture><source srcset="img/cidade-matosinhos.webp" type="image/webp" /><img src="img/cidade-matosinhos.jpg" alt="Orla marítima de Matosinhos" loading="lazy" /></picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">24 Junho 2026</span>
+          <h3 class="n-card__title">Matosinhos prepara-se para receber a Cimeira ibérica da bicicleta</h3>
+          <p class="n-card__excerpt">A cidade atlântica e a Antiga Fábrica Vasco da Gama serão o cenário da primeira Bikes Summit.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+      <a class="n-card" href="noticia-3.html" data-reveal style="--d:200ms">
+        <div class="n-card__media">
+          <span class="n-card__tag">Mobilidade</span>
+          <picture><source srcset="img/noticia-mobilidade.webp" type="image/webp" /><img src="img/noticia-mobilidade.jpg" alt="Ciclista numa estrada ao amanhecer" loading="lazy" /></picture>
+        </div>
+        <div class="n-card__body">
+          <span class="n-card__date">12 Junho 2026</span>
+          <h3 class="n-card__title">Mobilidade ativa: porque a Europa se redesenha à volta da bicicleta</h3>
+          <p class="n-card__excerpt">De Sevilha a Copenhaga, investir na bicicleta transforma a economia, a saúde e o ar das cidades.</p>
+          <span class="n-card__more">Ler artigo <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SPONSORS ================= -->
 <section class="section sponsors" id="sponsors">
   <div class="wrap">
@@ -509,7 +563,6 @@
     </div>
   </div>
 </section>
-
 </main>
 
 <!-- ================= FOOTER ================= -->
@@ -544,7 +597,7 @@
       <ul>
         <li><a href="a-bikes-summit.html">Sobre nós</a></li>
         <li><a href="#">Impacto</a></li>
-        <li><a href="#">Notícias</a></li>
+        <li><a href="noticias.html">Notícias</a></li>
         <li><a href="#">Sustentabilidade</a></li>
         <li><a href="#">Contactos</a></li>
       </ul>
