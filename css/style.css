@@ -1168,6 +1168,8 @@ section[id] { scroll-margin-top: 80px; }
 .talk__format::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--talks); }
 .talk__title { font-size: clamp(1.15rem,1.9vw,1.55rem); line-height: 1.1; }
 .talk__speaker { color: var(--grey-2); font-size: 0.92rem; margin-top: 0.45rem; }
+.talk__place { color: var(--muted); font-size: 0.84rem; margin-top: 0.3rem; display: inline-flex; align-items: center; gap: 0.4em; }
+.talk__place svg { flex: none; color: var(--talks); }
 .talk__cta { justify-self: end; }
 .talk__btn { display: inline-flex; align-items: center; gap: 0.5em; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: #A32CC9; border: 1.5px solid rgba(163,44,201,0.4); border-radius: 100px; padding: 0.7em 1.2em; white-space: nowrap; transition: 0.35s var(--ease); }
 .talk__btn:hover { background: #A32CC9; border-color: #A32CC9; color: #fff; }
