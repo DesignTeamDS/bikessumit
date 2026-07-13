@@ -1099,6 +1099,8 @@ h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 700; line-height: 0.94
 section[id] { scroll-margin-top: 80px; }
 
 .feature-split figure.venue-fig { aspect-ratio: 4/3; }
+.feature-split figure.figure--wide { aspect-ratio: 3/2; }
+.feature-split.feature-split--single { grid-template-columns: 1fr; max-width: 70ch; }
 .venue-addr { font-size: 1.15rem; color: var(--ink); font-weight: 500; margin: 0.7rem 0 1.5rem; line-height: 1.5; }
 .venue-facts { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.9rem; }
 .venue-facts li { display: flex; gap: 0.7em; align-items: flex-start; font-size: 0.97rem; color: var(--grey-2); }
@@ -1361,3 +1363,49 @@ body.article-page .nav { background: rgba(1, 20, 14, 0.9); backdrop-filter: blur
 .spon-grid--main .wordmark { font-size: 1.95rem; }
 @media (max-width: 820px) { .spon-grid--3, .spon-grid--4 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .spon-grid--3, .spon-grid--4 { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   IMPACTO / SUSTENTABILIDADE / CONTACTOS
+   ============================================================ */
+
+/* Barra de números (reaproveita .stats, agora com grelha fixa sem sobras) */
+.stats__grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 820px) { .stats__grid { grid-template-columns: repeat(2, 1fr); } .stats__item:nth-child(odd) { border-left: none; padding-left: 0; } }
+@media (max-width: 480px) { .stats__grid { grid-template-columns: 1fr; } .stats__item { border-left: none; padding-left: 0; } }
+
+/* Cards de auto-encaminhamento (Contactos) — variante link do .benefit */
+a.benefit--link { display: block; text-decoration: none; color: inherit; position: relative; }
+.benefit--link .benefit__go { position: absolute; top: clamp(1.5rem,2.6vw,2.1rem); right: clamp(1.5rem,2.6vw,2.1rem); color: var(--pine); opacity: 0.5; transition: transform 0.3s var(--ease), opacity 0.3s var(--ease); }
+.benefit--link:hover .benefit__go { transform: translate(3px, -3px); opacity: 1; }
+
+/* Ficha de contacto rápida (dentro de .on-dark, junto ao formulário) */
+.contact-facts { margin-top: 1.8rem; margin-bottom: 0; }
+.on-dark .venue-facts.contact-facts li { color: rgba(255,255,255,0.8); }
+.on-dark .venue-facts.contact-facts svg { color: var(--mint); }
+.contact-facts a { color: #fff; font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+.contact-facts a:hover { color: var(--mint); }
+
+/* Campos select e textarea (design system de formulários) */
+.field select {
+  width: 100%; padding: 0.95em 2.4em 0.95em 1.1em; border: 1.5px solid var(--line); border-radius: 10px;
+  font-family: var(--f-body); font-size: 1rem; color: var(--ink); background: var(--paper);
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M2 3.5L5 6.5L8 3.5' stroke='%23666968' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 1.1em center; background-size: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s; cursor: pointer;
+}
+.field select:invalid { color: var(--grey); }
+.field select:focus { outline: none; border-color: var(--pine); box-shadow: 0 0 0 3px rgba(33,159,128,0.14); }
+.field textarea {
+  width: 100%; padding: 0.95em 1.1em; border: 1.5px solid var(--line); border-radius: 10px;
+  font-family: var(--f-body); font-size: 1rem; color: var(--ink); background: var(--paper);
+  resize: vertical; min-height: 130px; transition: border-color 0.3s, box-shadow 0.3s;
+}
+.field textarea::placeholder { color: var(--grey); }
+.field textarea:focus { outline: none; border-color: var(--pine); box-shadow: 0 0 0 3px rgba(33,159,128,0.14); }
+
+/* Robustez: títulos com palavra única muito longa (ex. "Sustentabilidade") quebram linha em vez de cortar */
+.page-hero h1 { overflow-wrap: break-word; word-break: break-word; }
+
+/* Título de hero mais contido para palavras únicas muito longas */
+.page-hero h1.h1--long { font-size: clamp(2.3rem, 8vw, 7rem); }
