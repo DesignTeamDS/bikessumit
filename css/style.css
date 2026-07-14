@@ -254,7 +254,7 @@ h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 700; line-height: 0.94
    NAVBAR
    ============================================================ */
 .nav {
-  position: fixed; inset: 0 0 auto 0; z-index: 100;
+  position: fixed; inset: 0 0 auto 0; z-index: 130;
   display: flex; align-items: center; justify-content: space-between;
   gap: 2rem;
   padding: 0.9rem var(--gutter);
@@ -265,6 +265,7 @@ h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 700; line-height: 0.94
   backdrop-filter: blur(14px) saturate(140%);
   box-shadow: 0 1px 0 rgba(255,255,255,0.08);
 }
+.nav.menu-open { background: var(--ink); backdrop-filter: none; box-shadow: none; }
 .nav__logo { display: flex; align-items: center; gap: 0.7rem; z-index: 2; }
 .nav__logo img { height: 48px; width: auto; }
 .nav__menu {
@@ -302,7 +303,7 @@ h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 700; line-height: 0.94
 .mobile-menu {
   position: fixed; inset: 0; z-index: 110;
   background: var(--ink);
-  padding: 6rem var(--gutter) 2rem;
+  padding: 6rem var(--gutter) calc(2rem + env(safe-area-inset-bottom, 0px));
   display: flex; flex-direction: column;
   transform: translateY(-100%);
   transition: transform 0.6s var(--ease);
@@ -311,14 +312,22 @@ h1, h2, h3, h4 { font-family: var(--f-head); font-weight: 700; line-height: 0.94
 .mobile-menu.open { transform: none; }
 .mobile-menu a {
   font-family: var(--f-head); font-weight: 700;
-  font-size: clamp(1.8rem, 8vw, 3rem);
+  font-size: clamp(1.5rem, 6.5vw, 2.4rem);
   color: #fff; line-height: 1.15;
   padding: 0.25em 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   display: flex; justify-content: space-between; align-items: center;
 }
 .mobile-menu a span { font-family: var(--f-body); font-size: 0.8rem; color: var(--mint); }
-.mobile-menu .btn { margin-top: 2rem; align-self: flex-start; }
+.mobile-menu .btn {
+  font-family: var(--f-body); font-weight: 500;
+  font-size: 1rem; line-height: normal;
+  color: var(--fg-btn);
+  padding: 1.05em 1.7em;
+  border-bottom: none;
+  justify-content: center;
+}
+.mobile-menu .btn { margin: 2rem 0 0.5rem; align-self: flex-start; flex-shrink: 0; }
 
 /* ============================================================
    HERO
@@ -1103,8 +1112,8 @@ section[id] { scroll-margin-top: 80px; }
 .feature-split.feature-split--single { grid-template-columns: 1fr; max-width: 70ch; }
 .venue-addr { font-size: 1.15rem; color: var(--ink); font-weight: 500; margin: 0.7rem 0 1.5rem; line-height: 1.5; }
 .venue-facts { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.9rem; }
-.venue-facts li { display: flex; gap: 0.7em; align-items: flex-start; font-size: 0.97rem; color: var(--grey-2); }
-.venue-facts svg { flex: none; margin-top: 3px; color: var(--pine); }
+.venue-facts li { position: relative; padding-left: 1.85em; font-size: 0.97rem; color: var(--grey-2); }
+.venue-facts svg { position: absolute; left: 0; top: 3px; color: var(--pine); }
 .map-embed { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16/7; margin-top: clamp(2rem, 4vw, 3.2rem); background: var(--paper-2); }
 .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
 
