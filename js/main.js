@@ -20,6 +20,7 @@
     var isOpen = open !== undefined ? open : !menu.classList.contains("open");
     menu.classList.toggle("open", isOpen);
     burger.classList.toggle("open", isOpen);
+    nav.classList.toggle("menu-open", isOpen);
     burger.setAttribute("aria-expanded", String(isOpen));
     document.body.style.overflow = isOpen ? "hidden" : "";
   };
