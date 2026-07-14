@@ -1131,6 +1131,8 @@ section[id] { scroll-margin-top: 80px; }
 
 /* Page-hero com fotografia de destaque (tratamento mais suave) */
 .page-hero--photo .page-hero__bg img { filter: saturate(0.82) contrast(1.04) brightness(0.9); opacity: 0.92; object-position: center 42%; }
+/* Fotos com cor própria forte (ex. pôr do sol) — sem luminosity a substituir a cor pelo tom verde da marca */
+.page-hero__bg img.keep-color { mix-blend-mode: normal; object-position: center 22%; }
 .page-hero--photo .page-hero__grad {
   background:
     radial-gradient(95% 75% at 85% 0%, rgba(56,245,199,0.2) 0%, transparent 46%),
@@ -1409,3 +1411,15 @@ a.benefit--link { display: block; text-decoration: none; color: inherit; positio
 
 /* Título de hero mais contido para palavras únicas muito longas */
 .page-hero h1.h1--long { font-size: clamp(2.3rem, 8vw, 7rem); }
+
+/* ============================================================
+   EVENTS HUB — After Party / Sunset Party / Night Summit
+   ============================================================ */
+.event-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.85rem; margin-top: 1.6rem; font-family: var(--f-head); font-weight: 500; font-size: 0.92rem; color: rgba(255,255,255,0.82); }
+.event-meta span { display: inline-flex; align-items: center; gap: 0.5rem; }
+.event-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.5); flex: none; }
+
+.event-note { display: flex; align-items: flex-start; gap: 0.9rem; background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.4rem; margin: 1.8rem 0 2.2rem; max-width: 70ch; }
+.event-note svg { flex: none; color: var(--pine); margin-top: 2px; }
+.event-note p { color: var(--grey-2); font-size: 0.95rem; margin: 0; line-height: 1.55; }
+.event-note b { color: var(--ink); }
